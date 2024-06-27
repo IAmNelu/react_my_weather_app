@@ -4,7 +4,6 @@ import { Header } from "./components/Header";
 
 function App() {
 	const queryClient = new QueryClient();
-	console.log(import.meta.env.VITE_WEATHER_API_KEY);
 	return (
 		<QueryClientProvider client={queryClient}>
 			<Header />
