@@ -4,7 +4,9 @@ on:
   push:
     branches:
       - main
-
+#Allow repo secrets
+env:
+  VITE_WEATHER_API_KEY: ${{ secrets.VITE_WEATHER_API_KEY }}
 jobs:
   build:
     name: Build
